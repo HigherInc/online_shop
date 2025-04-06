@@ -2,8 +2,10 @@
 
 create table customers (
     id serial primary key,
-    name varchar(50),
-    email varchar(100)
+    email varchar(100),
+    password varchar(50),
+    role varchar(10),
+    session_id varchar(20)
 );
 
 create table products (
@@ -26,11 +28,4 @@ create table order_details (
     order_id int references orders(id),
     product_id int references products(id),
     quantity int check (Quantity > 0)
-);
-
-create table logins (
-    id serial primary key,
-    email varchar(100),
-    password varchar(50),
-    session_id varchar(20)
 );
