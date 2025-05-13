@@ -1,0 +1,22 @@
+.container-list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 7px;
+}
+
+.container-list a {
+    text-decoration: none;
+}
+
+
+.footer {
+    min-height: 80px;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 100%;
+    margin: 0%;
+    padding: 0%;
+}
